@@ -8,7 +8,7 @@ function predict() {
     return;
   }
 
-  fetch('/.netlify/functions/proxy', {  // Point to your serverless function
+  fetch('/proxy', {  // Point to your serverless function
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
